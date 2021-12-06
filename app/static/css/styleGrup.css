@@ -1,0 +1,125 @@
+body {
+  background: #232323;
+}
+
+#navbar {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 100px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "freqall"
+    "comb"
+    "comb";
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.freqall {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
+  grid-auto-flow: row;
+  justify-content: center;
+  grid-template-areas: "table table map";
+  grid-area: freqall;
+}
+
+.table {
+  justify-self: center;
+  grid-area: table;
+}
+
+.map {
+  grid-area: map;
+}
+
+.comb {
+  display: grid;
+  grid-template-rows: auto 100%;
+  gap: 15px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "form form form"
+    "data data data";
+  grid-area: comb;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "cr1 cr2 boton";
+  grid-area: form;
+}
+
+.cr1 {
+  grid-area: cr1;
+}
+
+.cr2 {
+  grid-area: cr2;
+}
+
+.boton {
+  justify-self: center;
+  align-self: center;
+  grid-area: boton;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
+  grid-auto-flow: row;
+  grid-template-areas: "tab map1";
+  grid-area: data;
+}
+
+.tab {
+  justify-self: center;
+  align-self: stretch;
+  grid-area: tab;
+}
+
+.map1 {
+  grid-area: map1;
+}
+
+.table label {
+  color: #ffffff;
+}
+.dataTables_info {
+  color: #ffffff;
+}
+table {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+th,
+td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border-collapse: collapse;
+  padding: 0.3em;
+  font-size: 18px;
+}

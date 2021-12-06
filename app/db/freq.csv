@@ -1,0 +1,430 @@
+"","Var1","Freq"
+"231","La Candelaria",5901
+"150","Campo Amor",5142
+"331","Perpetuo Socorro",5093
+"154","Caribe",4866
+"119","Barrio Colón",4489
+"288","Los Conquistadores",4108
+"364","Santa Fé",3986
+"144","Cabecera San Antonio de Prado",3767
+"424","Villa Nueva",3726
+"345","San Benito",3538
+"218","Guayaquil",3527
+"155","Carlos E. Restrepo",3342
+"347","San Diego",3275
+"311","Naranjal",3243
+"401","Terminal de Transporte",3203
+"125","Belén",2959
+"157","Castilla",2908
+"287","Los Colores",2792
+"139","Boston",2760
+"228","La Alpujarra",2760
+"163","Corazón de Jesús",2738
+"416","Villa Carlota",2628
+"217","Guayabal",2597
+"165","Cristo Rey",2366
+"341","Prado",2345
+"227","La Aguacatala",2342
+"174","El Chagualo",2202
+"223","Jesús Nazareno",2202
+"292","Manila",2192
+"148","Calle Nueva",2025
+"410","Universidad Nacional",2013
+"190","El Progreso",2000
+"398","Suramericana",1883
+"343","Rosales",1759
+"275","Laureles",1738
+"188","El Poblado",1695
+"204","Estación Villa",1664
+"263","Las Acacias",1655
+"377","Sevilla",1527
+"151","Campo Valdés No. 1",1508
+"229","La América",1431
+"158","Castropol",1394
+"166","Cuarta Brigada",1391
+"205","Facultad de Minas U. Nacional",1385
+"306","Moravia",1377
+"134","Bomboná No. 1",1374
+"283","Los Ángeles",1333
+"267","Las Granjas",1298
+"118","Barrio Colombia",1284
+"402","Toscana",1278
+"406","Trinidad",1278
+"346","San Bernardo",1276
+"293","Manrique Central No. 1",1273
+"207","Fátima",1268
+"219","Héctor Abad Gómez",1258
+"342","Robledo",1243
+"349","San Isidro",1229
+"327","Patio Bonito",1202
+"162","Cerro Nutibara",1191
+"303","Miranda",1188
+"318","Oleoducto",1186
+"142","Buenos Aires",1180
+"264","Las Brisas",1176
+"90","Alfonso López",1168
+"181","El Estadio",1145
+"291","Los Pinos",1142
+"400","Tenche",1134
+"179","El Diamante",1130
+"405","Tricentenario",1125
+"241","La Gloria",1118
+"167","Cucaracho",1085
+"409","Universidad de Antioquia",1073
+"193","El Rincón",1069
+"117","Barrio Caicedo",1062
+"238","La Florida",1056
+"297","Manrique Oriental",1055
+"348","San Germán",1049
+"152","Campo Valdés No. 2",1047
+"1","0",1046
+"328","Pedregal",1046
+"226","Kennedy",1042
+"89","Alejandro Echavarría",1035
+"103","Área de Expansión Pajarito",1030
+"325","Parque Juan Pablo II",1019
+"361","San Pedro",1019
+"278","López de Mesa",1016
+"128","Berlin",1011
+"279","Lorena",1007
+"368","Santa María de los Ángeles",1002
+"214","Girardot",999
+"418","Villa Flora",988
+"210","Florida Nueva",986
+"359","San Miguel",977
+"285","Los Balsos No.2",920
+"333","Picacho",900
+"280","Loreto",882
+"146","Calasanz",877
+"105","Asomadera No. 1",869
+"232","La Castellana",863
+"399","Tejelo",858
+"133","Bolivariana",853
+"237","La Floresta",847
+"201","El Velódromo",811
+"350","San Javier No.1",810
+"294","Manrique Central No. 2",794
+"235","La Esperanza",789
+"91","Altamira",778
+"198","El Tesoro",778
+"397","Sucre",771
+"290","Los Naranjos",748
+"203","Enciso",738
+"140","Boyacá",737
+"255","La Pilarica",737
+"358","San Martín de Porres",731
+"272","Las Palmas",727
+"124","Belalcázar",724
+"112","Aures No. 2",722
+"170","Doce de Octubre No.2",717
+"302","Miraflores",710
+"373","Santander",709
+"233","La Colina",701
+"196","El Salvador",699
+"145","Cabecera Urbana San Cristobal",686
+"420","Villa Hermosa",679
+"352","San Joaquín",661
+"269","Las Lomas No.1",659
+"149","Campo Alegre",658
+"365","Santa Inés",654
+"259","La Salle",651
+"254","La Palma",649
+"273","Las Playas",643
+"141","Brasilia",642
+"88","Alejandría",632
+"164","Córdoba",631
+"192","El Raizal",625
+"289","Los Mangos",624
+"186","El Pinal",620
+"211","Francisco Antonio Zea",620
+"412","Versalles No. 1",616
+"106","Asomadera No. 2",615
+"250","La Milagrosa",604
+"169","Doce de Octubre No.1",594
+"426","Villatina",590
+"113","Aures No.1",581
+"374","Santo Domingo Savio No. 1",571
+"313","Nueva Villa de la Iguaná",560
+"252","La Mota",558
+"213","Gerona",552
+"323","Palermo",552
+"378","Simón Bolívar",545
+"215","Granada",538
+"339","Popular",534
+"281","Los Alcázares",526
+"147","Calasanz Parte Alta",521
+"282","Los Alpes",517
+"417","Villa del Socorro",510
+"168","Diego Echavarría",485
+"284","Los Balsos No.1",476
+"183","El Nogal-Los Almendros",473
+"173","El Castillo",468
+"419","Villa Guadalupe",465
+"277","Loma de los Bernal",452
+"97","Aranjuez",451
+"135","Bomboná No. 2",433
+"178","El Danubio",433
+"370","Santa Mónica",431
+"245","La Libertad",429
+"257","La Pradera",429
+"189","El Pomar",425
+"256","La Piñuela",421
+"121","Barrio de Jesús",416
+"209","Florencia",405
+"411","Veinte de Julio",404
+"308","Moscú No. 2",402
+"270","Las Lomas No.2",400
+"274","Las Violetas",399
+"360","San Pablo",398
+"307","Moscú No. 1",396
+"337","Playón de Los Comuneros",395
+"362","Santa Cruz",389
+"367","Santa Margarita",386
+"271","Las Mercedes",385
+"216","Granizal",381
+"249","La Mansión",376
+"92","Altavista",373
+"127","Bello Horizonte",367
+"239","La Francia",364
+"161","Centro Administrativo",362
+"138","Bosques de San Pablo",358
+"372","Santa Teresita",353
+"180","El Diamante No. 2",342
+"266","Las Estancias",340
+"322","Palenque",336
+"407","U.D. Atanasio Girardot",333
+"357","San Lucas",326
+"109","Astorga",323
+"208","Ferrini",319
+"159","Cataluña",315
+"351","San Javier No.2",314
+"94","Altos del Poblado",301
+"265","Las Esmeraldas",296
+"366","Santa Lucía",295
+"258","La Rosa",293
+"388","Suburbano La Loma",282
+"95","Andalucía",271
+"96","Antonio Nariño",270
+"369","Santa María de Los Ángeles",263
+"184","El Pesebre",258
+"130","Bermejal-Los Alamos",257
+"160","Cementerio Universal",251
+"240","La Frontera",250
+"286","Los Cerros El Vergel",250
+"317","Olaya Herrera",248
+"242","La Hondonada",231
+"243","La Isla",228
+"423","Villa Niza",228
+"222","Jardín Botánico",227
+"312","Nueva Villa de Aburrá",225
+"326","Parque Norte",223
+"93","Altavista Sector Central",220
+"115","B. Cerro  El Volador",220
+"230","La Avanzada",215
+"194","El Rodeo",208
+"195","El Salado",204
+"321","Pajarito",196
+"221","Inst",193
+"236","La Esperanza No. 2",193
+"262","Lalinde",187
+"126","Belencito",181
+"225","Juan XXIII La Quiebra",179
+"120","Barrio Cristóbal",168
+"212","Fuente Clara",168
+"206","Facultad Veterinaria y Zootecnia U.de.A.",162
+"175","El Compromiso",161
+"220","Hospital San Vicente de Paúl",156
+"375","Santo Domingo Savio No. 2",156
+"191","El Progreso No.2",155
+"156","Carpinelo",153
+"421","Villa Liliam",152
+"176","El Corazón",143
+"408","U.P.B.",143
+"338","Plaza de Ferias",140
+"234","La Cruz",139
+"107","Asomadera No. 3",133
+"131","Betania",133
+"305","Monteclaro",127
+"334","Piedras Blancas",123
+"261","La Verde",116
+"101","Área de Expansión Altos de Calasanz",113
+"320","Pablo VI",111
+"319","Oriente",105
+"304","Miravalle",104
+"332","Picachito",103
+"315","Nuevos Conquistadores",97
+"404","Trece de Noviembre",96
+"396","Suburbano Travesias",95
+"276","Llanaditas",88
+"132","Blanquizal",87
+"390","Suburbano Mirador del Poblado",85
+"87","Aldea Pablo VI",84
+"268","Las Independencias",84
+"104","Área de Expansión San Antonio de Prado",83
+"413","Versalles No. 2",81
+"197","El Socorro",80
+"244","La Ladera",79
+"383","Suburbano Altavista",77
+"298","María Cano Carambolas",76
+"153","Campo Valdés No.2",73
+"330","Pedregal Bajo",70
+"248","La Loma Oriental",69
+"199","El Triunfo",66
+"316","Ocho de Marzo",66
+"329","Pedregal Alto",62
+"381","SUBURB El Plan",61
+"136","Bomboná No.1",60
+"425","Villa Turbay",54
+"171","Eduardo Santos",52
+"85","Aguas frias",51
+"143","Buga Patio Bonito",50
+"251","La mota",48
+"224","Juan Pablo II",45
+"301","Mirador del Doce",44
+"300","Metropolitano",43
+"355","San José la Cima No. 1",41
+"81","7001",40
+"384","Suburbano El Llano",40
+"253","La Oculta",39
+"247","La Loma de Los Bernal",36
+"344","San Antonio",36
+"429","Yolombo",36
+"391","Suburbano Palma Patio",34
+"65","1419",32
+"86","Aguas Frias",32
+"295","Manrique Central No.1",32
+"296","Manrique Central No.2",31
+"371","Santa Rosa de Lima",29
+"66","1422",28
+"98","Area De Expansion Altavista",28
+"393","Suburbano Pedregal alto",28
+"19","0408",27
+"70","1507",26
+"185","El Picacho",26
+"64","1408",23
+"73","1603",23
+"59","1204",22
+"67","1423",22
+"129","Berlín",22
+"356","San José la Cima No.2",22
+"385","Suburbano El Plan",22
+"44","1007",21
+"386","Suburbano el Tesoro",21
+"50","1019",20
+"80","6001",20
+"260","La Sierra",20
+"177","El Corazon El Morro",17
+"246","La Loma",17
+"71","1510",16
+"110","AUC1",16
+"69","1504",15
+"18","0402",13
+"32","0811",12
+"123","Batallón Girardot",12
+"99","Área de Expansión Altavista",11
+"102","Area De Expansion Belen Rincon",11
+"114","Aures No.2",11
+"310","Moscú No.2",11
+"38","0907",10
+"392","Suburbano Palmitas",10
+"11","0303",9
+"54","1103",9
+"299","Media Luna",9
+"46","1011",8
+"100","Area de Expansion Altos de Calasanz",8
+"363","Santa Elena Sector Central",8
+"414","Versalles No.1",8
+"17","0312",7
+"41","1001",7
+"42","1003",7
+"14","0307",6
+"202","El Vergel",6
+"376","Santo Domingo Savio No.1",6
+"422","Villa Lilliam",6
+"2","0103",5
+"31","0809",5
+"49","1018",5
+"52","1101",5
+"82","7002",5
+"382","Suburbano Aguas Frias",5
+"8","0211",4
+"23","0509",4
+"33","0813",4
+"47","1012",4
+"51","1020",4
+"57","1114",4
+"172","El Astillero",4
+"336","Piedras Blancas Represa",4
+"380","Sin Nombre",4
+"395","Suburbano Potrerito",4
+"415","Versalles No.2",4
+"4","0109",3
+"6","0205",3
+"10","0302",3
+"16","0310",3
+"22","0505",3
+"29","0717",3
+"39","0912",3
+"53","1102",3
+"55","1105",3
+"68","1503",3
+"75","1611",3
+"340","Potrerito",3
+"353","San José de la Montaña",3
+"389","Suburbano La Palma-El Patio",3
+"427","Volcana Guayabal",3
+"3","0105",2
+"9","0301",2
+"13","0306",2
+"20","0409",2
+"21","0413",2
+"24","0514",2
+"27","0712",2
+"40","0914",2
+"43","1004",2
+"45","1008",2
+"58","1202",2
+"61","1206",2
+"63","1306",2
+"72","1511",2
+"74","1605",2
+"78","1620",2
+"79","5002",2
+"83","9004",2
+"84","9086",2
+"108","Asomadera No.1",2
+"122","Barrios de Jesús",2
+"324","Palmitas Sector Central",2
+"387","Suburbano La Cuchilla",2
+"5","0202",1
+"7","0208",1
+"12","0304",1
+"15","0309",1
+"25","0606",1
+"26","0711",1
+"28","0716",1
+"30","0803",1
+"34","0815",1
+"35","0819",1
+"36","0903",1
+"37","0906",1
+"48","1015",1
+"56","1108",1
+"60","1205",1
+"62","1211",1
+"76","1612",1
+"77","1613",1
+"111","AUC2",1
+"116","B. Cerro El Volador",1
+"137","Boqueron",1
+"182","El Llano SE",1
+"187","El Plan",1
+"200","El Uvito",1
+"309","Moscú No.1",1
+"314","Nueva Villa de La Iguaná",1
+"335","Piedras Blancas - Matasano",1
+"354","San Jose Del Manzanillo",1
+"379","Sin Inf",1
+"394","Suburbano Piedra Gorda",1
+"403","Travesías",1
+"428","Yarumalito",1

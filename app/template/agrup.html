@@ -10,7 +10,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!-- datatables scripts-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+  <!-- datatables css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+
+  <link href="{{ url_for('static', filename='css/styleGrup.css') }}" rel="stylesheet" type="text/css">
 
   <title>AGRUPAMIENTO</title>
 </head>
@@ -18,7 +27,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid" id="navbar">
-      <img src="src/logoUnal.svg" alt="" height="70" class="d-inline-block align-text-top">
+      <img src="/static/src/logoUNAL.svg" alt="" height="70" class="d-inline-block align-text-top">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,11 +47,8 @@
           </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/agrupacion">AGRUPAMIENTO</a>
+            <a class="nav-link" href="{{ url_for('agrupacion')}}">AGRUPAMIENTO</a>
           </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/reporte-tecnico">REPORTE</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/referencias">REFERENCIAS</a>
@@ -53,45 +59,77 @@
   </nav>
 
   <div class="container">
-    <div class="grupos">
-      <div class="form">
-        <form action="" method="post">
-          <p>
-            Grupo:
-            <select name="typeAcc" required>
-              <option value="Candelaria">candelaria</option>
-              <option value="Castilla">castilla</option>
-              <option value="Popular">popular</option>
-              <option value="Robledo">robledo</option>
-              <option value="Poblado">poblado</option>
-            </select>
-          </p>
-          <input type="submit" id="send-filter" name="filter" value="buscar" />
-        </form>
-      </div>
+    <div class="freqall">
       <div class="table">
-        <table>
+        <table class="table table-striped table-hover table-sm" id="datatable" data-search="false">
           <thead>
             <tr>
-              <th>#</th>
               <th>Barrio</th>
+              <th>Freq</th>
             </tr>
           </thead>
           <tbody>
+            {% for row in all%}
             <tr>
-              <th>1</th>
-              <th>castilla</th>
+              <th>{{row[1]}}</th>
+              <th>{{row[2]}}</th>
             </tr>
-            <tr>
-              <th>2</th>
-              <th>candelaria</th>
-            </tr>
+            {% endfor %}
           </tbody>
         </table>
       </div>
+      <div class="map"><img src="/static/src/FreqAll.svg" alt="FreqBarrios"></div>
     </div>
-    <div class="map">
-      <img src="/static/src/Castilla.svg" alt="">
+    <div class="comb">
+      <div class="form">
+        <form action="" method="post">
+          <div class="cr1">
+            <p>Clase de accidente:
+              <select name="Tclass2">
+                {%for x in op1%}
+                <option value="{{x}}">{{x}}</option>
+                {%endfor%}
+              </select>
+            </p>
+          </div>
+          <div class="cr2">
+            <p>Gravedad del accidente:
+              <select name="gravedad">
+                {%for x in op2%}
+                <option value="{{x}}">{{x}}</option>
+                {%endfor%}
+              </select>
+            </p>
+          </div>
+          <div class="boton"><input type="submit" id="send-filter2" name="filter" value="buscar" /></div>
+        </form>
+      </div>
+      <div class="data">
+        <div class="tab">
+          <table class="table table-striped table-hover table-sm" id="combinacion1" data-search="false">
+            <thead>
+              <tr>
+                <Th>Gravedad</Th>
+                <th>Accidente</th>
+                <th>Barrio</th>
+                <th>Freq</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for row in com1%}
+              <tr>
+                <th>{{row[1]}}</th>
+                <th>{{row[2]}}</th>
+                <th>{{row[3]}}</th>
+                <th>{{row[4]}}</th>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <div class="map1">
+          <img src="{{src}}" alt="FreqComb"></div>
+      </div>
     </div>
   </div>
 
@@ -99,11 +137,22 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+  <script>
+    $(document).ready(function () {
+      $('#datatable').DataTable({
+        "order": [[1, "desc"]]
+      });
+      $('.dataTables_length').addClass('bs-select');
+    });
+
+    $(document).ready(function () {
+      $('#combinacion1').DataTable({
+        "order": [[3, "desc"]]
+      });
+      $('.dataTables_length').addClass('bs-select');
+    });
+  </script>
+
 </body>
 
 </html>
