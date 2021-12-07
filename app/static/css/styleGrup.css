@@ -18,6 +18,7 @@ h1 {
   color: #ffffff;
 }
 
+@media only screen and (min-width: 800px) {
 .container {
   display: grid;
   width: 100%;
@@ -117,6 +118,7 @@ form {
 
 .map1 {
   grid-area: map1;
+}
 }
 
 .table label {
