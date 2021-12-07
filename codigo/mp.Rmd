@@ -1,0 +1,105 @@
+---
+title: "Modelo 2"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+acc_med <- read_delim("C:/Users/Usuario/Documents/GitHub/AccidentalidadEnMedellin/incidentes_viales.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+```
+
+```{r}
+library(ggplot2)
+library(sf)
+```
+
+```{r}
+#limpieza
+acc_med$AÑO[acc_med$AÑO == "2019\\r"] <- "2019"
+
+acc_med$CLASE_ACCIDENTE[acc_med$CLASE_ACCIDENTE %in% c("Caída de Ocupante","Caida Ocupante", "Caída Ocupante")] <- "Caida de Ocupante"
+
+colnames(acc_med)[colnames(acc_med) == "MES"] <- "DAÑOS" ##cambio nombre de columna
+acc_med$DAÑOS[acc_med$DAÑOS == "Solo da\\xF1os"] <- "Solo daños"
+```
+
+```{r}
+##por facilidad trabajar con las localidades
+##correcion de los nombres de algunas localidades
+acc_med$LOCATION[acc_med$LOCATION %in% c("Bel\\xE9n", "Belén")] <- "Belen"
+acc_med$LOCATION[acc_med$LOCATION %in% c("Corregimiento de San Crist\\xF3bal", "Corregimiento de San Cristóbal")] <- "Corregimiento de San Cristobal"
+acc_med$LOCATION[acc_med$LOCATION %in% c("Corregimiento de San Sebasti\\xE1n de Palmitas", "Corregimiento de San Sebastián de Palmitas")] <- "Corregimiento de San Sebastian de Palmitas"
+acc_med$LOCATION[acc_med$LOCATION %in% c("La Am\\xE9rica", "La América")] <- "La America"
+```
+
+```{r}
+##eliminando datos inecesarios
+acc_med <- acc_med[!(acc_med$LOCATION %in% c("SN","Sin Inf","AU","In", "0", NA)), ]
+
+acc_med <- cbind(acc_med, 
+                 strcapture('(\\d*[/]\\d*[/]\\d*)', 
+                            acc_med$FECHA_ACCIDENTE, data.frame(FECHA = character())))
+```
+
+```{r}
+acc_med$AÑO <- as.factor(acc_med$AÑO)
+```
+
+```{r}
+summary(acc_med$AÑO)
+```
+```{r}
+acc_med$CLASE_ACCIDENTE <- as.factor(acc_med$CLASE_ACCIDENTE)
+```
+
+```{r}
+summary(acc_med$CLASE_ACCIDENTE)
+```
+```{r}
+modatropello <- lm(acc_med$CLASE_ACCIDENTE %in% c("Atropello") ~ acc_med$AÑO, data=acc_med)
+modatropello
+```
+```{r}
+summary(modatropello)
+```
+```{r}
+modcaida <- lm(acc_med$CLASE_ACCIDENTE %in% c("Caida de Ocupante") ~ acc_med$AÑO, data=acc_med)
+modcaida
+```
+```{r}
+summary(modcaida)
+```
+```{r}
+modchoque <- lm(acc_med$CLASE_ACCIDENTE %in% c("Choque") ~ acc_med$AÑO, data=acc_med)
+modchoque
+```
+```{r}
+summary(modchoque)
+```
+```{r}
+modincendio <- lm(acc_med$CLASE_ACCIDENTE %in% c("Incendio") ~ acc_med$AÑO, data=acc_med)
+modincendio
+```
+```{r}
+summary(modincendio)
+```
+```{r}
+modvolcamiento <- lm(acc_med$CLASE_ACCIDENTE %in% c("Volcamiento") ~ acc_med$AÑO, data=acc_med)
+modvolcamiento
+```
+```{r}
+summary(modvolcamiento)
+```
+```{r}
+modotro <- lm(acc_med$CLASE_ACCIDENTE %in% c("Otro") ~ acc_med$AÑO, data=acc_med)
+modotro
+```
+```{r}
+summary(modotro)
+```
+
